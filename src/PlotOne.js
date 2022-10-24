@@ -10,7 +10,7 @@ class PlotOne extends Component {
     componentDidMount() {
         const endpoint = "https://data.cityofnewyork.us/resource/rc75-m7u3.json"
         
-        fetch(endpoint)
+         fetch(endpoint)
             .then(response => response.json())
             .then(data => {
                 this.setState( {data: data})
